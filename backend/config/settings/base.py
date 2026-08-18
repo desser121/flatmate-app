@@ -23,7 +23,6 @@ INSTALLED_APPS = [
     'apps.matches',
     'apps.chat',
     'apps.notifications',
-    'apps.media',
 ]
 
 MIDDLEWARE = [
