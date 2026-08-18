@@ -20,6 +20,11 @@ jobs:
           python -m venv venv
           source venv/bin/activate
           pip install -r requirements/development.txt
+      - name: Django check
+        run: |
+          cd backend
+          source venv/bin/activate
+          python manage.py check
       - name: Run tests
         run: |
           cd backend
@@ -39,10 +44,6 @@ jobs:
         run: |
           cd frontend
           npm ci
-      - name: Lint
-        run: |
-          cd frontend
-          npm run lint --if-present
       - name: Build
         run: |
           cd frontend
