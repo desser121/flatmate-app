@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">FlatMate</string>
+    <string name="title_activity_main">FlatMate</string>
+    <string name="package_name">com.desser.flatmate</string>
+    <string name="custom_url_scheme">com.desser.flatmate</string>
+</resources>
