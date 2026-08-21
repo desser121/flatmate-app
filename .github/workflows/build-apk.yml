@@ -34,6 +34,8 @@ jobs:
 
       - name: Build frontend
         run: cd frontend && npm run build
+        env:
+          VITE_API_URL: https://flatmate-app-production-539e.up.railway.app/api
 
       - name: Sync Capacitor
         run: cd frontend && npx cap sync android
