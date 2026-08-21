@@ -19,15 +19,12 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'django_filters',
     'corsheaders',
-    'apps.core',
     'apps.users',
     'apps.listings',
     'apps.swipes',
     'apps.matches',
     'apps.chat',
     'apps.notifications',
-    'apps.media',
-    'apps.recommendations',
 ]
 
 MIDDLEWARE = [
