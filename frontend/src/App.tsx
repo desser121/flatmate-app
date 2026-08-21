@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import SetupPage from './pages/SetupPage';
 import FeedPage from './pages/FeedPage';
@@ -23,7 +23,7 @@ function ProtectedRoute({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="app">
         <Routes>
           <Route path="/login" element={<LoginPage />} />
@@ -35,6 +35,6 @@ export default function App() {
           <Route path="*" element={<Navigate to="/feed" replace />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
